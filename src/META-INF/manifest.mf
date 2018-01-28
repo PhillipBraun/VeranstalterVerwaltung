@@ -1,0 +1,12 @@
+Bundle-Name: VeranstalterVerwaltung
+Bundle-Description: Bundle um die Verwaltung von Veranstaltern in EKS P3 zu realisieren
+Bundle-Vendor: Apache Felix
+Bundle-Version: 1.0.0
+Bundle-Activator: eks.verwaltung.veranstalter.Activator
+Export-Package: eks.verwaltung.service
+Import-Package: org.osgi.framework,
+ de.thkoeln.eksc.osgi.entitaetsklassen,
+ de.thkoeln.eksc.osgi.zentraledienste,
+ de.thkoeln.eksc.osgi.reiseverwaltung,
+ de.thkoeln.eksc.osgi.veranstalterverwaltung,
+ de.thkoeln.eksc.osgi.buchungsverwaltung

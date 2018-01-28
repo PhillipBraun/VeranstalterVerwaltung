@@ -1,6 +1,5 @@
 package eks.verwaltung.veranstalter;
 
-import java.util.List;
 import java.util.ArrayList;
 
 import de.thkoeln.eksc.osgi.entitaetsklassen.Reise;
@@ -142,7 +141,7 @@ public class VeranstalterVerwaltungImpl implements VeranstalterVerwaltung {
 
             if(refs != null) {
                 ReiseVerwaltung reiseVerwaltung = (ReiseVerwaltung) context.getService(refs[0]);
-                List<Reise> alleReisen = reiseVerwaltung.alleReisen(); 
+                ArrayList<Reise> alleReisen = reiseVerwaltung.alleReisen(); 
                 reisen = new ArrayList<>();
                 for(Reise r: alleReisen){
                     if(v.getReisen().contains(r.getReisenummer()))
